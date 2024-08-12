@@ -25,3 +25,8 @@ D:\.net-web-api\MyApi\obj\Debug\net6.0\refint\MyApi.dll
 D:\.net-web-api\MyApi\obj\Debug\net6.0\MyApi.pdb
 D:\.net-web-api\MyApi\obj\Debug\net6.0\MyApi.genruntimeconfig.cache
 D:\.net-web-api\MyApi\obj\Debug\net6.0\ref\MyApi.dll
+D:\.net-web-api\MyApi\bin\Debug\net6.0\Humanizer.dll
+D:\.net-web-api\MyApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\.net-web-api\MyApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\.net-web-api\MyApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\.net-web-api\MyApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
