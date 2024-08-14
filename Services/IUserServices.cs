@@ -12,5 +12,6 @@ namespace MyApi.Services
         Task<List<User>> GetALlUserAsync();
         Task<string> PostUserAsync(User user);
         Task<string> PublishLicenseEvent(LicenseEvent licenseEvent);
+        Task<List<LicenseEvent>> GetAllLicense();
     }
 }

@@ -29,6 +29,16 @@ namespace MyApi.Controllers
            string msg = await _userServices.PostUserAsync(user);
             return Ok(msg);
         }
+         [HttpGet("/publishlicense")]
+         public async Task<IActionResult> AllLicense(){
+            var licenses = await _userServices.GetAllLicense();
+            return Ok(licenses);
+         }
+        [HttpPost("/publishlicense")]
+        public async Task<IActionResult>LicenseEventPublish([FromBody] LicenseEvent licenseEvent){
+           string msg = await _userServices.PublishLicenseEvent(licenseEvent);
+            return Ok(msg);
+        }
         
     }
 }

@@ -43,6 +43,12 @@ namespace MyApi.Services
                     new LicenseDetail{SubscriptionId="subscriptionid_3",Sku="sku3",Status="Active",UpdatedAt=3111111111}
                 }}
             };
+
+        public Task<List<LicenseEvent>> GetAllLicense()
+        {
+            return Task.FromResult(licenses);
+        }
+
         public Task<List<User>> GetALlUserAsync()
         {
            
@@ -82,14 +88,17 @@ namespace MyApi.Services
             return "User created successfully!";
         }
 
+
+        
         public async Task<string> PublishLicenseEvent(LicenseEvent licenseEvent)
         {
             if(!licenseEvent.Licenses.Any(l=>l.Sku=="meldminds.ellie.com")){
                 return "Invalid sku name";
             }
+            licenses.Add(licenseEvent);
             return "event published successfully!";
         }
 
-
+       
     }
 }
